@@ -1,0 +1,28 @@
+@extends('layouts.app')
+
+@section('content')
+    <section class="content-header show">
+        <div class="container-fluid">
+            <div class="row mb-2">
+
+                    <h1>Подробная информация</h1>
+                    <a class="btn btn-default button-create"
+                       href="{{ route('photos.index') }}">
+                        Назад
+                    </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="content px-3">
+        <div class="card">
+
+            <div class="card-body">
+                <div class="row">
+                    @include('photos.show_fields')
+                </div>
+            </div>
+
+        </div>
+    </div>
+@endsection
